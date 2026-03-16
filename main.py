@@ -19,7 +19,7 @@ FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
 CHANNELS = ["naughty-america", "team-skeet", "my-pervy-family", "step-siblings-caught", "my-porn-king", "scout-69", "raptor-llc", "vixen", "family-swap", "blacked-raw"]
-MAX_PAGES = [10, 156, 344, 1702, 196, 180]
+MAX_PAGES = [69, 176, 19, 9, 10, 182, 87, 13,2,12]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
