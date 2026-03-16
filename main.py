@@ -1,4 +1,3 @@
-# storing data in firebase realtime database
 import os
 import time
 import csv
@@ -9,11 +8,7 @@ import asyncio
 import requests
 import aiohttp
 from aiohttp import web
-import nest_asyncio
 from curl_cffi.requests import AsyncSession
-
-# Apply nest_asyncio (useful if testing in Colab/Jupyter before Render)
-nest_asyncio.apply()
 
 # ---------- CONFIGURATION ----------
 TELEGRAM_BOT_TOKEN = "8349995675:AAE9grCMm22vWOzmAjlDtpRd4iMR8IQiVgA"
@@ -214,7 +209,11 @@ async def process_page_and_batch(cffi_session, fb_session, page_url, semaphore, 
 
     print(f"🚀 [Channel: {channel_node}] Found {len(unique_links)} videos. Extracting...")
 
-    tasks = [process_single_video(cffi_session, fb_session, semaphore, url, channel_node) for url in unique_links]
+    # EXPLICITLY CREATE TASKS TO FIX AIOHTTP ERROR
+    tasks = [
+        asyncio.create_task(process_single_video(cffi_session, fb_session, semaphore, url, channel_node)) 
+        for url in unique_links
+    ]
     results = await asyncio.gather(*tasks)
 
     valid_results = [r for r in results if r is not None and r[0] != "Unknown Title"]
@@ -269,16 +268,20 @@ async def main_async():
     video_semaphore = asyncio.Semaphore(VIDEO_CONCURRENCY_LIMIT)
 
     async with AsyncSession() as cffi_session, aiohttp.ClientSession() as fb_session:
+        # EXPLICITLY CREATE TASKS TO FIX AIOHTTP ERROR
         tasks = []
         for channel_name, pages in zip(CHANNELS, MAX_PAGES):
-            tasks.append(process_channel(cffi_session, fb_session, channel_name, pages, channel_semaphore, video_semaphore))
+            task = asyncio.create_task(
+                process_channel(cffi_session, fb_session, channel_name, pages, channel_semaphore, video_semaphore)
+            )
+            tasks.append(task)
             
         await asyncio.gather(*tasks)
 
     total_time = time.time() - start_time
     print(f"\n🎉 ALL SCRAPING COMPLETED in {total_time:.2f} seconds!")
     
-    # Keep the script alive if you want the web server to stay up indefinitely 
+    # Optional: Keep the app alive after scraping so Render doesn't trigger a restart
     # await asyncio.Event().wait() 
 
 if __name__ == "__main__":
