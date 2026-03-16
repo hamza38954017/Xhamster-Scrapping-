@@ -1,4 +1,3 @@
 curl_cffi
-nest_asyncio
 aiohttp
 requests
