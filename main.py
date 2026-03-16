@@ -23,8 +23,8 @@ TELEGRAM_CHAT_ID = "7369364451"
 FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
-CHANNELS = ["abc", "bcd", "xyz"]
-MAX_PAGES = [8, 9, 14]
+CHANNELS = ["eroticonly", "reality-kings", "jav-hd","onlyfans","perv-milfs-n-teens", "mature-nl"]
+MAX_PAGES = [10, 156, 344, 1702, 196, 180]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
