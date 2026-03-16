@@ -18,14 +18,14 @@ TELEGRAM_CHAT_ID = "7369364451"
 FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
-CHANNELS = ["eroticonly", "reality-kings", "jav-hd","onlyfans","perv-milfs-n-teens", "mature-nl"]
+CHANNELS = ["naughty-america", "team-skeet", "my-pervy-family", "step-siblings-caught", "my-porn-king", "scout-69", "raptor-llc", "vixen", "family-swap", "blacked-raw"]
 MAX_PAGES = [10, 156, 344, 1702, 196, 180]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
 
 # Concurrency limits
-CHANNEL_CONCURRENCY_LIMIT = 5  # Scrape 5 channels at once
+CHANNEL_CONCURRENCY_LIMIT = 10 # Scrape 5 channels at once
 VIDEO_CONCURRENCY_LIMIT = 15   # 15 concurrent video checks per channel
 # -----------------------------------
 
