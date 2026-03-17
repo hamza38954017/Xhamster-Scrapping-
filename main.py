@@ -18,8 +18,8 @@ TELEGRAM_CHAT_ID = "7369364451"
 FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
-CHANNELS = ["brazzers", "naughty-america", "team-skeet", "my-pervy-family", "step-siblings-caught", "my-porn-king", "scout-69", "raptor-llc", "vixen", "family-swap", "blacked-raw", "websex-premium", "daddy4k", "vulture-on-faphouse", "hot-guys-fuck", "vlaanderens-vuilste-films", "only-tarts"]
-MAX_PAGES = [130, 69, 176, 19, 9, 10, 182, 87, 13, 2, 12, 3, 24, 41, 11, 4, 18]
+CHANNELS = ["hotxcreator", "passion-hd", "porn-fidelity", "ersties", "dorcel-club", "nubile-films", "vip4k", "bunny-luder", "deutsche-privat-videos", "teen-fidelity", "deeper", "centoxcento", "sexfantasyuk", "love-home-porn", "sexmex", "sis-loves-me", "love-her-feet", "pure-xxx-films", "real-home-made", "interracial-pass" 
+MAX_PAGES = [4, 24, 13, 42, 27, 21, 35, 4, 5, 13, 10, 3, 4, 54, 2, 26, 19, 12, 47, 49]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
