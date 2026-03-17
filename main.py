@@ -234,9 +234,35 @@ async def process_channel(cffi_session, fb_session, channel_name, max_pages, cha
     async with channel_semaphore:
         print(f"\n🎬 Starting to scrape channel: {channel_name} (Up to {max_pages} pages)")
         
-        for current_page in range(1, max_pages + 1):
+        # --- FETCH PROGRESS FROM FIREBASE ---
+        start_page = 1
+        progress_url = f"{FIREBASE_DB_URL}/scraping_progress/{channel_name}.json"
+        try:
+            async with fb_session.get(progress_url) as resp:
+                if resp.status == 200:
+                    last_page = await resp.json()
+                    if last_page and isinstance(last_page, int):
+                        start_page = last_page + 1
+                        print(f"   🔄 Resuming {channel_name} from page {start_page}...")
+        except Exception as e:
+            print(f"   ⚠️ Could not fetch progress for {channel_name}, starting from page 1.")
+        # ----------------------------------------------
+
+        if start_page > max_pages:
+            print(f"✅ Channel {channel_name} is already fully scraped (Max pages: {max_pages}).")
+            return
+        
+        for current_page in range(start_page, max_pages + 1):
             page_url = f"{BASE_CHANNEL_URL}/{channel_name}" if current_page == 1 else f"{BASE_CHANNEL_URL}/{channel_name}/{current_page}"
             await process_page_and_batch(cffi_session, fb_session, page_url, video_semaphore, current_page, channel_name)
+            
+            # --- SAVE PROGRESS TO FIREBASE ---
+            try:
+                async with fb_session.put(progress_url, json=current_page) as put_resp:
+                    pass # Silently update the highest completed page
+            except Exception as e:
+                print(f"   ⚠️ Failed to save progress for {channel_name}: {e}")
+            # -------------------------------------------
         
         print(f"\n✅ Finished processing channel: {channel_name}")
 
@@ -281,8 +307,9 @@ async def main_async():
     total_time = time.time() - start_time
     print(f"\n🎉 ALL SCRAPING COMPLETED in {total_time:.2f} seconds!")
     
-    # Optional: Keep the app alive after scraping so Render doesn't trigger a restart
-    # await asyncio.Event().wait() 
+    # --- HARD STOP PROCESS ---
+    print("🛑 Hard stopping the process at the OS level...")
+    os._exit(0) 
 
 if __name__ == "__main__":
     asyncio.run(main_async())
