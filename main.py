@@ -18,8 +18,9 @@ TELEGRAM_CHAT_ID = "7369364451"
 FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
-CHANNELS = ["hotxcreator", "passion-hd", "porn-fidelity", "ersties", "dorcel-club", "nubile-films", "vip4k", "bunny-luder", "deutsche-privat-videos", "teen-fidelity", "deeper", "centoxcento", "sexfantasyuk", "love-home-porn", "sexmex", "sis-loves-me", "love-her-feet", "pure-xxx-films", "real-home-made", "interracial-pass" ]
-MAX_PAGES = [4, 24, 13, 42, 27, 21, 35, 4, 5, 13, 10, 3, 4, 54, 2, 26, 19, 12, 47, 49]
+CHANNELS = [​"pinko-club", "fake-taxi", "tushy", "pervmom", "japan-hdv", "enjoyx", "younger-mommy", "maturetofuck", "k-mib", "la-france-a-poil", "hornyheaven", "filthy-amateur", "euro-blue-movies", "modern-day-sins", "cool-new-family", "oksana-katysheva", "get-your-fix", "kink", "touch-my-wife", "girlsway", "erin-electra", "dad-crush", "pepeporn-official", "filthy-kings", "mom-wants-to-breed", "school-girls-hd-channel", "old-pigs", "sexy-hub", "vintage-x", "javhub", "perverse-family", "teens-love-huge-cocks-channel", "digital-playground", "dogfart-network", "backroom-casting-couch", "erocom", "hunt4k", "desperate-amateurs-channel", "cliff-media-productions", "babes-network", "av-tits", "muschi-movie-official"
+]
+MAX_PAGES = [94,13,14,24,76,10,1,1,2,33,18,23,19,9,2,5,101,24,9,69,18,26,25,19,1,60,10,47,55,21,2,89,30,65,6,103,25,29,9,37,58,10]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
