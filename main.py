@@ -18,8 +18,8 @@ TELEGRAM_CHAT_ID = "7369364451"
 FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
-CHANNELS = ["pinko-club", "fake-taxi", "tushy", "pervmom", "japan-hdv", "enjoyx", "younger-mommy", "maturetofuck", "k-mib", "la-france-a-poil", "hornyheaven", "filthy-amateur", "euro-blue-movies", "modern-day-sins", "cool-new-family", "oksana-katysheva", "get-your-fix", "kink", "touch-my-wife", "girlsway", "erin-electra", "dad-crush", "pepeporn-official", "filthy-kings", "mom-wants-to-breed", "school-girls-hd-channel", "old-pigs", "sexy-hub", "vintage-x", "javhub", "perverse-family", "teens-love-huge-cocks-channel", "digital-playground", "dogfart-network", "backroom-casting-couch", "erocom", "hunt4k", "desperate-amateurs-channel", "cliff-media-productions", "babes-network", "av-tits", "muschi-movie-official"]
-MAX_PAGES = [94,13,14,24,76,10,1,1,2,33,18,23,19,9,2,5,101,24,9,69,18,26,25,19,1,60,10,47,55,21,2,89,30,65,6,103,25,29,9,37,58,10]
+CHANNELS = ["midwest-freaks", "swaglive", "lost-bets-games", "sexmex-faphouse", "antonio-mallorca", "nude-in-france", "5x-xham", "dirty-tina", "girls-out-west", "evolved-fights"]
+MAX_PAGES = [1,4,46,1,7,29,34,5,36,12]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
