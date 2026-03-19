@@ -18,14 +18,15 @@ TELEGRAM_CHAT_ID = "7369364451"
 FIREBASE_DB_URL = "https://xhamster-70a9b-default-rtdb.firebaseio.com"
 
 # Paste your channel names and max pages here
-CHANNELS = ["midwest-freaks", "swaglive", "lost-bets-games", "sexmex-faphouse", "antonio-mallorca", "nude-in-france", "5x-xham", "dirty-tina", "girls-out-west", "evolved-fights"]
-MAX_PAGES = [1,4,46,1,7,29,34,5,36,12]
+CHANNELS = ["freche-girls", "oldje", "girls-at-work", "my-family-pies", "mary-wet", "private-channel", "erotik-von-nebenan", "erojapanese", "porno-baguette", "milf-cougar-granny-empire", "cento-x-cento-vod", "vixen-plus", "porno-cloud", "do-the-wife", "purevicky66", "fake-hostel", "casting-couch-hd", "mofos-network", "21-naturals", "pure-mature", "german-scout", "vends-ta-culotte", "mommys-girl", "nasty-grannies", "milf-in-love", "vintagex", "atk-hairy", "topaweb", "naughty-old-women", "swinger-friends-germany", "hook-up-hot-shot", "swag-live", "60plusmilfs", "gang-bang-germany", "rodney-moore", "matureandco", "melanie-schweiger", "broken-latina-whores", "milky-peru", "xxx-job-interviews", "realpunting", "princess-cum", "freeuse-milf", "family-cuckolds", "czech-massage-channel", "hot-milfs-fuck", "net-video-girls", "milf-trip", "caribbean-com", "african-casting", "21-sextury", "massage-rooms-channel", "amateur-cfnm", "telugu-couple", "brand-new-amateurs", "mature-wanker", "home-grown-video", "50plusmilfs", "eastcoast-xxx", "atk-girlfriends", "see-him-fuck", "dirty-old-moviez", "tadpolexstudio", "hot-and-wet", "exploited-college-girls", "only-taboo", "old-nanny", "naughty-japanese-girls", "american-idol-x", "studio-doc", "video-teenage", "venus-rising-xxx", "fantasy-massage", "moms-bang-teens", "magma-film", "evil-angel", "mature-pickup", "thundercock", "first-anal-quest", "andy-star", "dixies-trailer-park", "sex-fantasy-uk", "jamie-young", "shameless-archives", "club-sweethearts", "intime-hausfrauen", "public-disgrace-by-kink", "wifey", "porn-cz", "x-live-community", "milf-x", "xtime-vod", "absolute-bdsm", "mf-video-brazil", "sextermedia", "africa-xxx", "the-habib-show", "defloration-channel", "leilani-lei-xxx", "cine-flix-media"
+]
+MAX_PAGES = [17,19,6,6,4,46,52,11,12,34,18,8,8,93,4,7,4,131,30,12,16,29,40,2,11,26,55,16,25,5,27,9,5,4,8,1,1,3,5,5,4,4,2,1,3,5,6,7,44,24,69,6,3,3,13,2,32,7,4,49,14,2,6,58,6,8,63,15,80,43,13,4,15,4,10,45,2,4,25,10,9,1,4,33,18,5,3,2,30,79,15,86,42,19,24,10,95,13,15,1]
 
 BASE_DOMAIN = "https://xhamster45.desi"
 BASE_CHANNEL_URL = f"{BASE_DOMAIN}/channels"
 
 # Concurrency limits
-CHANNEL_CONCURRENCY_LIMIT = 10 # Scrape 5 channels at once
+CHANNEL_CONCURRENCY_LIMIT = 100 # Scrape 5 channels at once
 VIDEO_CONCURRENCY_LIMIT = 30   # 15 concurrent video checks per channel
 # -----------------------------------
 
